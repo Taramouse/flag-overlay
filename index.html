@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flag Overlay</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="settings">
+      <div class="choices -emoji">
+        <input type="radio" name="image" value="italy" id="italy" checked>
+        <label tabindex="0" for="italy"> 🇮🇹</label>
+        <input type="radio" name="image" value="france" id="france">
+        <label tabindex="0" for="france"> 🇫🇷</label>
+        <input type="radio" name="image" value="germany" id="germany">
+        <label tabindex="0" for="germany">🇩🇪</label>
+        <input type="radio" name="image" value="uk" id="uk">
+        <label tabindex="0" for="uk">🇬🇧</label>
+        <input type="radio" name="image" value="sweden" id="sweden">
+        <label tabindex="0" for="sweden">🇸🇪</label>
+        <input type="radio" name="image" value="iceland" id="iceland">
+        <label tabindex="0" for="iceland">🇮🇸</label>
+      </div>
+      <div class="choices -opacity">
+        <input type="radio" name="opacity" value="0" id="opacity-0">
+        <label tabindex="0" for="opacity-0">0%</label>
+        <input type="radio" name="opacity" value="0.25" id="opacity-25">
+        <label tabindex="0" for="opacity-25">25%</label>
+        <input type="radio" name="opacity" value="0.50" id="opacity-50" checked>
+        <label tabindex="0" for="opacity-50">50%</label>
+        <input type="radio" name="opacity" value="0.75" id="opacity-75">
+        <label tabindex="0" for="opacity-75">75%</label>
+        <input type="radio" name="opacity" value="1.0" id="opacity-100">
+        <label tabindex="0" for="opacity-100">100%</label>
+      </div>
+      <div class="choices -text">
+        <input type="radio" name="greyscale" value="true" id="greyscale-yes" checked>
+        <label tabindex="0" for="greyscale-yes">Greyscale</label>
+        <input type="radio" name="greyscale" value="false" id="greyscale-no">
+        <label tabindex="0" for="greyscale-no">Color</label>
+      </div>
+      <div class="choices -text">
+        <input type="radio" name="blend-mode" value="normal" id="blend-none">
+        <label tabindex="0" for="blend-none">None</label>
+        <input type="radio" name="blend-mode" value="multiply" id="blend-multiply" checked>
+        <label tabindex="0" for="blend-multiply">Multiply</label>
+        <input type="radio" name="blend-mode" value="screen" id="blend-screen">
+        <label tabindex="0" for="blend-screen">Screen</label>
+        <input type="radio" name="blend-mode" value="overlay" id="blend-overlay">
+        <label tabindex="0" for="blend-overlay">Overlay</label>
+        <input type="radio" name="blend-mode" value="darken" id="blend-darken">
+        <label tabindex="0" for="blend-darken">Darken</label>
+        <input type="radio" name="blend-mode" value="lighten" id="blend-lighten">
+        <label tabindex="0" for="blend-lighten">Lighten</label>
+        <input type="radio" name="blend-mode" value="color-dodge" id="blend-color-dodge">
+        <label tabindex="0" for="blend-color-dodge">Dodge</label>
+        <input type="radio" name="blend-mode" value="color-burn" id="blend-color-burn">
+        <label tabindex="0" for="blend-color-burn">Burn</label>
+        <input type="radio" name="blend-mode" value="hard-light" id="blend-hard-light">
+        <label tabindex="0" for="blend-hard-light">Hard-light</label>
+        <input type="radio" name="blend-mode" value="soft-light" id="blend-soft-light">
+        <label tabindex="0" for="blend-soft-light">Soft-light</label>
+        <input type="radio" name="blend-mode" value="difference" id="blend-difference">
+        <label tabindex="0" for="blend-difference">Difference</label>
+        <input type="radio" name="blend-mode" value="exclusion" id="blend-exclusion">
+        <label tabindex="0" for="blend-exclusion">Exclusion</label>
+        <input type="radio" name="blend-mode" value="hue" id="blend-hue">
+        <label tabindex="0" for="blend-hue">Hue</label>
+        <input type="radio" name="blend-mode" value="saturation" id="blend-saturation">
+        <label tabindex="0" for="blend-saturation">Saturation</label>
+        <input type="radio" name="blend-mode" value="color" id="blend-color">
+        <label tabindex="0" for="blend-color">Color</label>
+        <input type="radio" name="blend-mode" value="luminosity" id="blend-luminosity">
+        <label tabindex="0" for="blend-luminosity">Luminosity</label>
+      </div>
+    </div>
+    <figure>
+      <div class="output"></div>
+      <div class="credit"></div>
+    </figure>
+  </main>
+
+  <footer>
+    Built with ♥️ by <a href="https://twitter.com/glenmaddern">@glenmaddern</a> for <a href="https://frontend.center/ep13-blend-modes-background">Episode
+      13</a> of <a href="https://frontend.center/">Front End Center</a>.
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
